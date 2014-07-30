@@ -1,0 +1,40 @@
+This is the fvb_dlux producer.
+
+<%= link_to 'Fvb Dlux', easymarklet_js('fvb_dlux_consumer.js') %>
+
+<a class="bookmarklet" href="javascript:(function()%7Balert(%22Ayaz!%22)%7D)()">this link</a>
+
+
+<a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://foo.bar/baz.js';})();">Externalized Bookmarklet</a>
+
+
+<a href="javascript:(function(){var s = document.createElement('script');s.src = 'http://bookmarklet-720pify.heroku.com/js/720pify.js';document.body.appendChild(s);})();">720pify</a>
+
+
+<a href="javascript:alert('This page is : ' + document.title);"> Show Title </a>
+
+
+<span class=DefMenuText>(click on "help" to open the new window)</span>
+<form name=form>
+<span class=PreText>Username:</span>
+    <input type=text name=username size=10>
+    <span class=BodyText>[<a href="javascript:explain(
+        'User Name',
+        'opener.document.form.username.value',
+        '<font face=Verdana size=2>' +
+        'The user name field is where you select a user name that ' +
+        'you will use every time you access this site.'
+    );">help</a>]</span>
+
+<br/>
+<span class=PreText>Password:</span>
+    <input type=text name=password size=10>
+    <span class=BodyText>[<a href="javascript:explain(
+        'Password',
+        'opener.document.form.password.value',
+        '<font face=Verdana size=2>' +
+        'The password field is where you select a unique password ' +
+        'for your account. This password will be required each ' +
+        'time you login to the site.'
+    );">help</a>]</span>
+</form>
